@@ -1,0 +1,111 @@
+:root {
+    --main-font-color: #22232a;
+    --alt-font-color: #400E32;
+    --main-font-link: #46413b;
+    --main-background-color: #F1EFDC;
+    --alt-background-color: #252525;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* HEADER SECTION */
+.header--container {
+    border: 1px solid lightblue;
+    background-color: var(--main-background-color);
+    height: 5em;
+    color: var(--alt-font-color);
+    position: sticky;
+    top: -2rem;
+}
+
+.logo--container {
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.nav-lang--container {
+    border: 1px solid darkgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.nav--list {
+    display: flex;
+    gap: 4em;
+}
+
+.nav--link {
+    color: var(--alt-font-color);
+}
+
+/*  MAIN SECTION */
+.main--container {
+    background-color: var(--main-background-color);
+    color: var(--alt-font-color);
+}
+
+.all-section {
+    height: 45rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.main--section--container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: center;
+}
+
+.intro-text {
+    font-size: 4.3rem;
+    font-weight: 600 ;
+    letter-spacing: -0.2rem;
+}
+
+.intro-text-3 {
+    display: block;
+    margin-bottom: 2%;
+}
+
+.social--list {
+    /* border: 1px red solid; */
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    height: 3rem;
+    margin-bottom: 2%;
+}
+
+.social--item {
+    height: 2.5rem;
+}
+
+.social--img {
+    height: 100%;
+}
+
+.intro-p {
+    border:1px solid brown;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+    width: 30em;
+}
