@@ -1,6 +1,7 @@
 :root {
     --main-font-color: #22232a;
     --alt-font-color: #400E32;
+    --alt-white-color: #fff;
     --main-font-link: #46413b;
     --main-background-color: #F1EFDC;
     --alt-background-color: #252525;
@@ -21,7 +22,7 @@ html {
 
 /* HEADER SECTION */
 .header--container {
-    border: 1px solid lightblue;
+    /* border: 1px solid lightblue; */
     background-color: var(--main-background-color);
     height: 5em;
     color: var(--alt-font-color);
@@ -36,7 +37,7 @@ html {
 }
 
 .nav-lang--container {
-    border: 1px solid darkgreen;
+    /* border: 1px solid darkgreen; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,18 +57,20 @@ html {
 
 /*  MAIN SECTION */
 .main--container {
-    background-color: var(--main-background-color);
     color: var(--alt-font-color);
 }
 
-.all-section {
+.main--section {
+    background-color: var(--main-background-color);
     height: 45rem;
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 4.5em;
 }
 
 .main--section--container {
     /* border: 1px solid blue; */
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     height: 90%;
@@ -107,5 +110,56 @@ html {
     font-size: 1.1rem;
     line-height: 1.8rem;
     letter-spacing: 0.05rem;
-    width: 30em;
+    max-width: 30rem;
+    
+}
+
+/* ALL SECTION */
+
+
+.all-section {
+    height: 45rem;
+    max-width: 68%;
+    margin: 0 auto;
+}
+
+/* ===  ABOUT SECTION ==== */
+
+.section--title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.bio--container {
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 1.3fr 2.7fr;
+    gap: 3rem;
+    height: 30rem;
+    align-items: center;
+}
+
+.bio--img--container {
+    grid-area: 1 /  1 / 4 / 2;
+}
+
+.bio--img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.skills--container {
+    grid-area: 1/ 2 / 2 / 3;
+}
+
+.skills--list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
+}
+
+.skills--item {
+    color: var(--alt-white-color);
+    background-color: var(--alt-background-color);
+    padding: 0.5em 0.5em;
 }
