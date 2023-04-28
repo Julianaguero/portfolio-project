@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>JA Web Dev</title>
+    <title>Julian Aguero | Wev Developer</title>
 </head>
 <body>
     <div class="website--container">
@@ -17,8 +17,8 @@
             <div class="nav-lang--container">
                 <div class="nav--container">
                     <ul class="nav--list">
-                        <li class="nav--item"><a href="#" class="link nav--link">About</a></li>
-                        <li class="nav--item"><a href="#" class="link nav--link">Projects</a></li>
+                        <li class="nav--item"><a href="#about" class="link nav--link">About</a></li>
+                        <li class="nav--item"><a href="#projects" class="link nav--link">Projects</a></li>
                         <li class="nav--item"><a href="#" class="link nav--link">Contact</a></li>
                     </ul>
                 </div>
@@ -42,7 +42,7 @@
                     <p class="intro-p">I love exploring and creating 🚀 I'm a lifelong learner 🎓 and I might have a thing for traditional Neapolitan Pizza 🍕</p>
                 </div>
             </section>
-            <section class="all-section about--section">
+            <section class="all-section about--section" id="about">
                 <div class="about--container">
                     <h2 class="section--title about-title">My skills</h2>
                     <div class="bio--container">
@@ -54,8 +54,10 @@
                                 <li class="skills--item">HTML</li>
                                 <li class="skills--item">CSS</li>
                                 <li class="skills--item">JavaScript</li>
-                                <li class="skills--item">Python</li>
+                                <li class="skills--item">TypeScript</li>
                                 <li class="skills--item">React</li>
+                                <li class="skills--item">Vue.js</li>
+                                <li class="skills--item">Python</li>
                                 <li class="skills--item">Bootstrap</li>
                                 <li class="skills--item">MySQL</li>
                                 <li class="skills--item">Wordpress</li>
@@ -63,37 +65,32 @@
                         </div>
                         <div class="about-text--container">
                             <h3 class="hl-text">I love building stuff</h3>
-                            <p class="about--p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sed ab provident veritatis eaque atque quo, adipisci dicta cum dolor?</p>
+                            <p class="about--p">Me apasiona aprender y trabajar en equipo. Puedo ofrecer compromiso, responsabilidad, dedicación y adaptación rápida a diferentes entornos de trabajo. Me siento motivado por proyectos innovadores que generan impacto en el mundo tecnológico y acercan soluciones a los distintos modelos de negocios.</p>
                         </div>
                         <div class="cv--container">
-                            <button class="btn cv--btn">
-                                <a href="" class="cv--link">Download CV</a>
-                            </button>
+                            <a href="files/CV_Julian_Aguero_Front-end_dev.pdf" target="_blank" class="link btn cv--link">Download CV</a>        
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="all-section projects--section">
+            <section class="all-section projects--section" id="projects">
                 <div class="project--container">
                     <h2 class="section--title project-title">Projects</h2>
                     <div class="individual--project--container">
-                        <h4 class="tech--description">PERSONAL PROJECT</h4>
-                        <div class="info--project--container">
-                            <h2 class="project--title">Sneaker Store</h2>
+                            <h4 class="tech--description">PERSONAL PROJECT</h4>
+                            <h2 class="project--title">Sneakers Store</h2>
                             <ul class="skills--list project--list">
-                                <li class="skills--items project--skills--items">HTML</li>
-                                <li class="skills--items project--skills--items">CSS</li>
-                                <li class="skills--items project--skills--items">Javascript</li>
+                                <li class="skills--item project--skills--item">HTML</li>
+                                <li class="skills--item project--skills--item">CSS</li>
+                                <li class="skills--item project--skills--item">Javascript</li>
                             </ul>
                             <div class="project--link--container">
-                                    <a href="" class="link project--link">git</a>
-                                    <a href="" class="link project--link">website</a>
+                                <a href="" class="link btn project--link link-a">View project</a>
                             </div>
-                            <div class="project--info">
-                                <p class="project--info--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste voluptas veritatis nemo libero illum doloribus numquam voluptates alias deserunt nostrum excepturi, aut quo provident earum ipsum dolor sequi. Magnam?</p>
-                            </div>       
-                            <div class="img--project--container"><img src="" alt="" class="img project--img">imagen proyecto</div>
-                        </div>
+                            <p class="project--info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste voluptas veritatis nemo libero illum doloribus numquam voluptates alias deserunt nostrum excepturi, aut quo provident earum ipsum dolor sequi. Magnam?</p>
+                            <div class="img--project--container">
+                                <img src="img/img_project_sneakers.jpg" alt="Sneaker Store Project" class="img project--img"></img>
+                            </div>
                     </div>
                 </div>
             </section>
@@ -103,9 +100,9 @@
                     <a href="" class="mail--link">julianaguero@gmail.com</a>
                 </div>
                 <div class="btn--container">
-                    <button class="btn contact--btn">
+                    <div class="btn contact--btn">
                         <a href="" class="contact--form--link">Get in touch</a>
-                    </button>
+                    </div>
                 </div>
             </section>
         </main>
