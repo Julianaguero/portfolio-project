@@ -35,8 +35,8 @@ body {
 }
 
 /* HEADER SECTION */
+
 .header--container {
-    /* border: 1px solid lightblue; */
     background-color: var(--main-background-color);
     height: 5em;
     color: var(--alt-font-color);
@@ -66,7 +66,6 @@ body {
 }
 
 .nav-lang--container {
-    /* border: 1px solid darkgreen; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +76,7 @@ body {
 
 .nav--list {
     display: flex;
-    gap: max(3em, 2px);
+    gap: 3.5rem;
 }
 
 .nav--link {
@@ -151,6 +150,7 @@ body {
 
 .all-section {
     height: 45rem;
+    width: 100%;
     max-width: 1100px;
     margin: auto;
     padding: 5rem 2rem;
@@ -165,7 +165,6 @@ body {
 }
 
 .bio--container {
-    /* border: 1px solid green; */
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1.7fr 0.6fr;
@@ -512,15 +511,16 @@ body {
         justify-content: space-between;
         align-items: center;
         top: -.01rem;
-        padding: 0rem 1rem 0em;
-        height: 3rem;
+        width: 100%;
+        padding: 0 1rem;
+        height: 4rem;
     }
     
     .logo--container {
         display: flex;
         justify-content: left;
-        width: 30%;
         margin: 0;
+        width: 40%;
     }
     
     .hamburger--container {
@@ -569,10 +569,16 @@ body {
         inset: 0 0 0 100%;
         min-height: 100vh;
         display: block;
-        background: hsla(60, 10%, 56%, 0.7);
-        backdrop-filter: blur(1rem);
+        background: hsla(60, 4%, 28%, 0.944);
         padding-top: 6rem;
         transition: 0.4s ease-in-out;
+    }
+
+    @supports (backdrop-filter: blur(1.1rem)) {
+        .mobile--nav {
+            background: hsla(60, 10%, 56%, 0.7);
+            backdrop-filter: blur(1.1rem);
+        }
     }
 
     .mobile--nav.is-active {
@@ -588,12 +594,12 @@ body {
         display: inline-block;
         width: 60%;
         padding: 1rem 3rem;
-        color: var(--alt-font-color);
+        color: var(--alt-white-color);
         transition: 0.3s;
     }
 
     .mobile--nav--link:active {
-        color: var(--alt-white-color);
+        color: var(--main-background-color);
     }
 
     .nav-lang--container {
