@@ -1,4 +1,22 @@
 const inputs = document.querySelectorAll(".contact--input");
+const menuBtn = document.querySelector(".hamburger--menu");
+const menuNav = document.querySelector(".mobile--nav");
+const navLinks = document.querySelectorAll(".mobile--nav--link")
+
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle('is-active');
+    menuNav.classList.toggle('is-active');
+})
+
+navLinks.forEach((eve) => {
+    eve.addEventListener('click', () => {
+        menuBtn.classList.remove('is-active');
+        menuNav.classList.remove('is-active');
+        
+})
+
+})
 
 inputs.forEach((ipt) => {
     ipt.addEventListener("focus", () => {
