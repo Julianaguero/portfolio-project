@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Julian Aguero | Wev Developer</title>
+</head>
+<body>
+    <div class="website--container">
+        <header class="header--container">
+            <div class="logo--container"><h1><a href="index.html#">Julian Aguero</a></h1></div>
+            <div class="nav-lang--container">
+                <div class="nav--container">
+                    <ul class="nav--list">
+                        <li class="nav--item"><a href="index.html#about" class="link nav--link">About</a></li>
+                        <li class="nav--item"><a href="index.html#projects" class="link nav--link">Projects</a></li>
+                        <li class="nav--item"><a href="index.html#contact" class="link nav--link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="lang-switcher--container" data-hover="Not ready yet &#128546;">
+                    <span class="lang-switcher--btn-es lang-switcher--btn-es_active">ES</span>
+                    <span class="lang-switcher--bar">|</span>
+                    <span class="lang-switcher--btn-en lang-switcher--btn-en_active">EN</span>
+                </div>
+            </div>
+            <div class="hamburger--container">
+                <button class="hamburger--menu">
+                    <span class="hamburger--bar"></span>
+                </button>
+                <nav class="mobile--nav">
+                    <ul class="mobile--nav--list">
+                        <li class="mobile--nav--item"><a href="index.html#" class="mobile--nav--link">Home</a></li>
+                        <li class="mobile--nav--item"><a href="index.html#about" class="mobile--nav--link">About</a></li>
+                        <li class="mobile--nav--item"><a href="index.html#projects" class="mobile--nav--link">Projects</a></li>
+                        <li class="mobile--nav--item"><a href="index.html#contact" class="mobile--nav--link">Contact</a></li>
+                    </ul>            
+                </nav>
+            </div>
+        </header>
+        <body>
+            <section class="all-section project-detail--section">
+                <h2 class="ind--project--title">Sneakers Store</h2>
+                <div class="readtime--wrapper">
+                    <p class="readtime--p">2 minute read</p>
+                </div>
+                <p class="ind--project--p">Ing creatives is an e-learning platform that provides professional resources in areas ranging from branding, design, product design, UI/UX, marketing, to advertising and social media, among others.</p>
+                <div class="project-detail--container">
+                    <div class="project-detail--box">
+                        <h3>Type</h3>
+                        <ul>
+                            <li>E-Commerce website</li>
+                        </ul>
+                    </div>
+                    <div class="project-detail--box">
+                        <h3>Stack</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="project-detail--box">
+                        <h3>Code</h3>
+                        <ul>
+                            <li><a href="https://github.com/eliasgiannantonio/codo-a-codo-TP.git" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                    <div class="project-detail--box">
+                        <h3>Live</h3>
+                        <ul>
+                            <li><a href="https://app.netlify.com/sites/poetic-faun-d9c6de/deploys" target="_blank">Live</a></li>
+                        </ul>
+                    </div>
+                    <img class="ind--project--img" src="/img/img_project_sneakers_full.png" alt="Run the code" title="Run the code">
+                </div>
+                <h2 class="ind--project--title">Project Purpose and Goal</h2>
+                <p class="ind--project--p">The CEO’s main concern was the speed of the original site. It was usually taking about 8-12 seconds to show the content. This meant that any social media campaign would likely fail, as users would leave the site before it even loaded. As google puts it “Two seconds is the threshold for ecommerce website acceptability. At Google, we aim for under a half-second.” Once that was agreed upon, I set my goal to prioritize speed.</p>
+                <h2 class="ind--project--title">Problems and Thought Process</h2>
+                <p class="ind--project--p">The biggest challenge for this project was that it had image heavy pages that had to load as fast as possible. I looked through the original site to determine what could be optimized and what had to be re-built. I quickly realized that most of the loading time was spent on unused scripts and large images. I went through the code to lazy load images, but it didn’t make much of a difference. The scripts were the issue. The second problem was that all the media was being requested on demand from the server, which added an additional delay to the page’s load-time.</p>
+                <p class="ind--project--p">I quickly came to the conclusion that optimizing the current site was going to take longer than building it from scratch. I put together a test that reproduced the landing page’s functionality but based on a static page model instead of a dynamic one. The results were immediately noticeable.</p>
+                <h2 class="ind--project--title">Web Stack and Explanation</h2>
+                <p class="ind--project--p"> I used Gatsby as my static page generator to ensure that the pages would load as fast as possible. I also chose this technology because it’s based on React, this gave me flexibility to use components that I had been working on previously. I built a markdown based content management system for the team to add and modify content easily. I deployed it to Netlify because it offers an open source CMS and admin solutions out of the box. Finally, I implemented Stripe for payments using their Nodejs API. Since I wanted to avoid deploying a server, I added a serverless lambda function that talked to the Stripe API.</p>
+
+            </section>
+        </body>
+        <footer class="footer--container">
+            <div class="footer--section">
+                <div class="footer--box info--footer--container">
+                    <h2 class="footer--logo"><a href="index.html#">Julian Aguero</a></h2>
+                    <p class="copyright">© 2023, Built and designed by Julian Agüero</p>
+                </div>
+                <div class="footer--box footer--links--container">
+                    <p   class="footer--box--title box--title-a">Links</p>
+                    <div class="footer--nav--container">
+                        <ul class="footer--list">
+                            <li class="footer--links--item"><a href="index.html#about" class="link footer--links">About</a></li>
+                            <li class="footer--links--item"><a href="index.html#projects" class="link footer--links">Project</a></li>
+                            <li class="footer--links--item"><a href="index.html#contact" class="link footer--links">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer--box footer--social--container">
+                    <p class="footer--box--title">Get in touch!</p>
+                    <ul class="footer--social--list">
+                        <li class="footer--social--item"><a href="https://github.com/Julianaguero" class="link footer--social--link" target="_blank"><img src="img/github.png" alt="Github" class="img footer--social--img"></a></li>
+                        <li class="footer--social--item"><a href="https://www.linkedin.com/in/julianaguero/" class="link footer--social--link" target="_blank"><img src="img/linkedin.png" alt="Linkedin" class="img footer--social--img"></a></li>
+                        <li class="footer--social--item"><a href="https://www.instagram.com/j10928/" class="link footer--social--link" target="_blank"><img src="img/instagram.png" alt="Instagram" class="img footer--social--img"></a></li>
+                        <li class="footer--social--item"><a href="mailto:julianaguero@gmail.com" class="link footer--social--link"><img src="img/mail.png" alt="Contact me" class="img footer--social--img"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+<script src="/js/app.js"></script>
+</body>
+</html>

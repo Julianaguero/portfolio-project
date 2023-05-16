@@ -3,7 +3,7 @@ const menuBtn = document.querySelector(".hamburger--menu");
 const menuNav = document.querySelector(".mobile--nav");
 const navLinks = document.querySelectorAll(".mobile--nav--link")
 
-
+// Script - Hamburger Menu
 menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle('is-active');
     menuNav.classList.toggle('is-active');
@@ -14,10 +14,9 @@ navLinks.forEach((eve) => {
         menuBtn.classList.remove('is-active');
         menuNav.classList.remove('is-active');
         
+    })
 })
-
-})
-
+// Script para formulario
 inputs.forEach((ipt) => {
     ipt.addEventListener("focus", () => {
         ipt.parentNode.classList.add("focus");
@@ -30,3 +29,4 @@ inputs.forEach((ipt) => {
         ipt.parentNode.classList.remove("focus");
     })
 })
+
