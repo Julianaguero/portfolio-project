@@ -24,11 +24,6 @@
     text-decoration: none;
 }
 
-input[type=text], input[type=button] {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    }
-
 html {
     scroll-behavior: smooth;
 }
@@ -36,6 +31,12 @@ html {
 a {
     color: var(--main-background-color);
 }
+
+button {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
 
 body {
     position: relative; 
