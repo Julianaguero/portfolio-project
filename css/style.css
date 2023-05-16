@@ -32,12 +32,6 @@ a {
     color: var(--main-background-color);
 }
 
-button {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-}
-
-
 body {
     position: relative; 
 }
@@ -327,6 +321,8 @@ body {
 /* ====== BUTTONS ====*/ 
 
 .btn, .btn-b {
+    -webkit-appearance: none;
+    border-radius: 0;
     display:  inline-block;
     font-size: 1rem;
     padding: 1em 1.4em;
@@ -752,7 +748,7 @@ body {
     .intro-text {
         font-size: 2.5rem;
         letter-spacing: 0.01em;
-        margin: 1.8rem 0;
+        margin: 0 0 1.8rem 0 ;
     }
     
     .intro-text-2, .intro-text-3 {
