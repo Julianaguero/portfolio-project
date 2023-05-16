@@ -24,6 +24,11 @@
     text-decoration: none;
 }
 
+input[type=text], input[type=button] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    }
+
 html {
     scroll-behavior: smooth;
 }
