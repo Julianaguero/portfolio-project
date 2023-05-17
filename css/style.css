@@ -167,7 +167,7 @@ body {
 .intro-text-2::after {
     left: 0;
     bottom: 0.4rem;
-    width: 103%;
+    width: 107%;
     transition: all 250ms 200ms ease-in-out;  
 }
 
@@ -214,6 +214,7 @@ body {
     /* border:1px solid brown; */
     font-size: 1.1rem;
     line-height: 1.8rem;
+    text-align: justify;
     letter-spacing: 0.05rem;
     max-width: 30rem;
 }
@@ -307,10 +308,10 @@ body {
 }
 
 .about--p {
-    font-size: 1.1rem;
-    text-indent: 1rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.01rem;
     text-align: justify;
-    line-height: 1.4em;
+    line-height: 1.6em;
     margin-bottom: 0.7rem;
 }
 
@@ -400,6 +401,9 @@ body {
 .project--info {
     grid-area: text;
     max-width: 80%;
+    line-height: 1.8rem;
+    letter-spacing: 0.01rem;
+    text-align: justify;
     margin-bottom: 4rem;
 }
 
@@ -415,6 +419,11 @@ body {
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 0.25em 1.5em 0 rgba(0, 0, 0, 0.2), 0 1.5em 1.9em 0 rgba(0, 0, 0, 0.19);
+    transition: all 250ms ease-in-out;
+}
+
+.project--img:hover {
+    transform: scale(1.02);
 }
 
 /* ====== CONTACT SECTION ======*/
@@ -756,6 +765,15 @@ body {
         font-size: 2.1rem;
     }
 
+    .intro-text-3::after, .intro-text-2::after {
+        bottom: 0.160rem;
+        height: 0.7rem;
+    }
+
+    .intro-text-3::after {
+        width: 12rem;
+    }
+    
     .social--list {
         margin-bottom: 6%;
     }
@@ -815,16 +833,13 @@ body {
     letter-spacing: 0.03rem;
     line-height: 2rem;
     margin-bottom: 1.75rem;
-}
-
-.project-detail--box {
-    
+    text-align: justify;
 }
 
 .project-detail--box h3 {
     font-size: 1.5rem;
     font-weight: 900;
-    margin-bottom: 1.78rem;
+    margin: 1rem 0;
 }
 
 .project-detail--box li {
@@ -845,4 +860,16 @@ body {
     height: 100%;
     object-fit: cover;
     box-shadow: 0.05rem 0.10rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 760px) {
+    .project-detail--container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 0.75rem;
+    }
+    .ind--img--container {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
