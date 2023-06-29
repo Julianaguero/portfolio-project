@@ -247,7 +247,7 @@ body {
 
 .all-section {
     /* background-color: var(--main-font-color); */
-    height: 45rem;
+    height: auto;
     width: 100%;
     max-width: 1100px;
     margin: auto;
@@ -390,19 +390,21 @@ body {
                             "button image"
                             "text image";
     grid-template-columns: 2.5fr 1.5fr;
+    margin-bottom: 2rem;
 }
+
 
 .tech--description {
     grid-area: top;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 0.1em;
     margin-bottom: 0.5em;   
 }
 
 .project--title {
     grid-area: title;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 400;
     margin-bottom: 0.2em;
 }
