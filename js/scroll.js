@@ -1,14 +1,41 @@
-const titleToUnderline = document.querySelectorAll(".section--title");
+const slider = document.querySelector('.carousel__track'); // o probar .carousel__track
+let sliderSection = document.querySelectorAll('.carousel__slide');
+let sliderSectionLast = sliderSection[sliderSection.length -1];
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry =>{
-        entry.target.classList.toggle("on-scroll", entry.isIntersecting)
-    })  
-}, {
-    rootMargin: "-120px",
+const bntLeft = document.querySelector('.button-left');
+const bntRight = document.querySelector('.button-right');
+
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+function Next() {
+    let sliderSectionFirst = document.querySelectorAll('.carousel__slide')[0];
+    slider.style.marginLeft ='-200%';
+    slider.style.transition ='all 0.8s';
+    setTimeout(function(){
+        slider.style.transition  = 'none';
+        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+        slider.style.marginLeft = '-100%';
+    }, 800);
 }
-);
 
-titleToUnderline.forEach(titleNoUnderlined => {
-    observer.observe(titleNoUnderlined)
+function Prev() {
+    let sliderSection = document.querySelectorAll('.carousel__slide');
+    let sliderSectionLast = sliderSection[sliderSection.length -1];
+    slider.style.marginLeft ='0';
+    slider.style.transition ='all 0.8s';
+    setTimeout(function(){
+        slider.style.transition  = 'none';
+        slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+        slider.style.marginLeft = '-100%';
+    }, 800);
+}
+
+bntRight.addEventListener('click', function(){
+    Next();
 });
+
+bntLeft.addEventListener('click', function(){
+    Prev();
+});
+
+// 
