@@ -863,6 +863,10 @@ body {
     height: 100%;
 }
 
+.project-detail--container {
+    margin-bottom: 5rem;
+}
+
 .ind--project--title {
     font-size: 2.8rem;
     font-weight: 300;
@@ -904,6 +908,20 @@ body {
     height: 100%;
     object-fit: cover;
     box-shadow: 0.05rem 0.10rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.ind--img--container-project2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.ind--project--secondary-title {
+    font-size: 1.8em;
+    font-weight: 300;
+    margin: 3rem 0 1.5rem;  
 }
 
 @media (min-width: 760px) {
@@ -912,8 +930,9 @@ body {
         grid-template-columns: repeat(4, 1fr);
         margin-bottom: 0.75rem;
     }
-    .ind--img--container {
-        width: 90%;
-        margin: 0 auto;
-    }
+   
+}
+
+.project-detail--container {
+    margin-bottom: 2rem;
 }
