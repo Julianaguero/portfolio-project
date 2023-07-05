@@ -892,6 +892,10 @@ body {
         text-align: justify;
     }
 
+    .carousel-container {
+        width: 90%;
+        height: 100%;
+
     .contact--title::after {
         bottom: calc(100% / 2);
     }
