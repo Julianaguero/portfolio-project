@@ -507,7 +507,9 @@ body {
 
 .project--img {
     display: block;
-    max-height: 75%;
+    max-height: 320px;
+    max-width: 500px;
+    
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0.05rem 0.10rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
@@ -724,10 +726,11 @@ body {
     }
 
     .project--img {
+        width: 500px;
+        height: 320px;
         margin: auto;
-        overflow: clip;
         max-width: 100%;
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .carousel-container {
@@ -976,13 +979,20 @@ body {
 .project-detail--box ul {
     margin-bottom: 1.78rem;
 }
+.ind--img--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .ind--project--img {
+    max-width: 600px;
     width: 100%;
     height: 100%;
     object-fit: cover;
     box-shadow: 0.05rem 0.10rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+    
 }
 
 .ind--img--container-project2 {
