@@ -719,18 +719,23 @@ body {
         flex-flow: column;
         justify-content: space-between;  
         height: 100%; 
+        margin-bottom: 9em;
     }
 
     .project--info {
         max-width: 90%;
     }
+    
+    .img--project--container a {
+        width: 100%;
+    }
 
     .project--img {
-        width: 500px;
-        height: 320px;
+        max-width: 500px;
+        max-height: 320px;
+        width: 100%;
         margin: auto;
-        max-width: 100%;
-        object-fit: fill;
+        object-fit: cover;
     }
 
     .carousel-container {
@@ -905,7 +910,7 @@ body {
     }
 
     .carousel-container {
-        width: 90%;
+        width: 100%;
         height: 100%;
     }
 
