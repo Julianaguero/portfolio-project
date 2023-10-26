@@ -505,12 +505,15 @@ body {
     box-shadow: 0.05rem 0.10rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 
+
+
+
 .project--img {
     display: block;
     max-height: 320px;
     max-width: 500px;
-    
-    object-fit: cover;
+    height: 320px;
+    object-fit: fill;
     border-radius: 10px;
     box-shadow: 0.05rem 0.10rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
     transition: all 250ms ease-in-out;
@@ -730,12 +733,18 @@ body {
         width: 100%;
     }
 
+ 
+    .img--project--container video {
+        object-fit: fill;
+    }
+
+
     .project--img {
         max-width: 500px;
         max-height: 320px;
         width: 100%;
         margin: auto;
-        object-fit: cover;
+        object-fit: scale-down;
     }
 
     .carousel-container {
